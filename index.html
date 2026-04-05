@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hridesh Maithani | Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background Particles -->
+    <div class="particles-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">HM</span>
+                <span class="logo-dot"></span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="images/HrideshMaithaniResume.pdf" class="nav-link" download
+                    aria-label="Download Resume">Resume</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in-up">
+                <i class="fas fa-code"></i>
+                <span>Data Scientist & ML Engineer</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line fade-in-up" style="--delay: 0.1s">Transforming <span
+                        class="gradient-text">Data</span></span>
+                <span class="title-line fade-in-up" style="--delay: 0.2s">Into <span
+                        class="gradient-text-accent">Intelligence</span></span>
+            </h1>
+            <p class="hero-subtitle fade-in-up" style="--delay: 0.3s">
+                I'm <strong>Hridesh Maithani</strong>, a passionate Data Scientist specializing in machine learning,
+                predictive analytics, and building end-to-end ML solutions that drive real-world impact.
+            </p>
+            <div class="hero-cta fade-in-up" style="--delay: 0.4s">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+                <div class="btn btn-outline" style="position: relative; padding: 0; overflow: hidden; display: inline-flex; align-items: center; border-radius: 30px; cursor: pointer;">
+                    <select onchange="if(this.value) { const a = document.createElement('a'); a.href = this.value; a.download = this.value.split('/').pop(); document.body.appendChild(a); a.click(); document.body.removeChild(a); this.selectedIndex=0; }" style="appearance: none; -webkit-appearance: none; background: transparent; border: none; color: inherit; padding: 0.8rem 2.5rem 0.8rem 1.5rem; font-family: inherit; font-size: 0.95rem; font-weight: 500; cursor: pointer; outline: none; width: 100%;">
+                        <option value="" disabled selected hidden>Download CV / Resume</option>
+                        <option value="images/hrideshCV.pdf" style="color: black;">Download CV</option>
+                        <option value="images/HrideshMaithaniResume.pdf" style="color: black;">Download Resume</option>
+                    </select>
+                    <i class="fas fa-download" style="position: absolute; right: 1rem; pointer-events: none;"></i>
+                </div>
+            </div>
+            <div class="social-links fade-in-up" style="--delay: 0.5s">
+                <a href="https://github.com/HrideshMaithani14" target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span class="social-tooltip">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/hridesh-maithani-00a059391/" target="_blank" class="social-link"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="social-tooltip">LinkedIn</span>
+                </a>
+                <a href="https://www.coursera.org/user/bd911e4f6fcabc3cd9a36e4b1d34a915" target="_blank"
+                    class="social-link" aria-label="Coursera">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="social-tooltip">Coursera</span>
+                </a>
+                <a href="https://x.com/HrideshMai66402" target="_blank" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span class="social-tooltip">Twitter</span>
+                </a>
+                <a href="https://www.instagram.com/hardy_0187/" target="_blank" class="social-link"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span class="social-tooltip">Instagram</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">
+                    <span class="title-text">About Me</span>
+                    <span class="title-line"></span>
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <div class="image-wrapper">
+                        <img src="images/profilr.png" alt="Hridesh Maithani - Data Scientist" id="profile-photo">
+                        <div class="image-overlay"></div>
+                        <div class="image-border"></div>
+                        <div class="image-shine"></div>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="23">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <div class="about-intro">
+                        <h3>Hello! I'm <span class="highlight">Hridesh Maithani</span></h3>
+                        <p class="lead">A passionate aspiring Data Scientist and AI enthusiast with expertise in machine
+                            learning, deep learning, and predictive modeling. I build robust neural networks and ML
+                            models to transform complex data into actionable insights.</p>
+                    </div>
+                    <div class="about-details">
+                        <p>Currently in my pre-final year pursuing a Bachelor of Computer Applications (BCA) , I have
+                            developed a strong technical foundation encompassing Data Structures, Algorithms, and DBMS.
+                            My passion for data science has driven me to gain hands-on experience by building end-to-end
+                            ML and deep learning applications, such as artificial neural networks for customer churn and
+                            salary prediction, as well as network security models.</p>
+                        <p>I am continuously expanding my knowledge in this rapidly evolving field, actively exploring
+                            cutting-edge domains like Gen AI and Agentic AI. Recently, I engaged in enterprise-level
+                            technical development through the Microsoft Elevate - AICTE program. My core strengths
+                            include building robust machine learning pipelines in Python, uncovering hidden patterns
+                            through extensive Exploratory Data Analysis (EDA), and applying Natural Language Processing
+                            (NLP) to real-world datasets.</p>
+                    </div>
+                    <div class="about-skills-preview">
+                        <div class="skill-tag"><i class="fas fa-brain"></i> Machine Learning & Deep Learning</div>
+                        <div class="skill-tag"><i class="fab fa-python"></i> Python & SQL</div>
+                        <div class="skill-tag"><i class="fas fa-robot"></i> Gen AI & Agentic AI</div>
+                        <div class="skill-tag"><i class="fas fa-comment-dots"></i> NLP</div>
+                        <div class="skill-tag"><i class="fas fa-chart-bar"></i> Data Analytics & Visualization</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">
+                    <span class="title-text">Skills & Expertise</span>
+                    <span class="title-line"></span>
+                </h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid new-skills-layout">
+                    <!-- Core Domains -->
+                    <div class="skill-category-card reveal-up" style="--delay: 0.1s">
+                        <div class="skill-category-header">
+                            <div class="category-icon glow-ai">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Core Domains & Technologies</h3>
+                        </div>
+                        <div class="skill-tags-animated">
+                            <span class="animated-tag">Machine Learning</span>
+                            <span class="animated-tag">Deep Learning</span>
+                            <span class="animated-tag">Natural Language Processing</span>
+                            <span class="animated-tag">Data Science</span>
+                            <span class="animated-tag highlight-tag">Gen AI</span>
+                            <span class="animated-tag highlight-tag">Agentic AI</span>
+                            <span class="animated-tag">Artificial Intelligence</span>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-category-card reveal-up" style="--delay: 0.2s">
+                        <div class="skill-category-header">
+                            <div class="category-icon glow-code">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-progress-bars">
+                            <div class="progress-item">
+                                <div class="progress-info">
+                                    <span class="progress-name"><i class="fab fa-python"></i> Python</span>
+                                    <span class="progress-value">95%</span>
+                                </div>
+                                <div class="animated-bar">
+                                    <div class="skill-bar-fill fill python-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-info">
+                                    <span class="progress-name"><i class="fas fa-database"></i> SQL</span>
+                                    <span class="progress-value">90%</span>
+                                </div>
+                                <div class="animated-bar">
+                                    <div class="skill-bar-fill fill sql-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-info">
+                                    <span class="progress-name"><i class="fas fa-microchip"></i> C / C++</span>
+                                    <span class="progress-value">85%</span>
+                                </div>
+                                <div class="animated-bar">
+                                    <div class="skill-bar-fill fill cpp-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-category-card reveal-up" style="--delay: 0.3s">
+                        <div class="skill-category-header">
+                            <div class="category-icon glow-tools">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Developer Tools</h3>
+                        </div>
+                        <div class="tools-grid-animated">
+                            <div class="tool-item float-anim-1">
+                                <i class="fas fa-file-code"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="tool-item float-anim-2">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="tool-item float-anim-3">
+                                <i class="fas fa-book-open"></i>
+                                <span>Jupyter</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coursework -->
+                    <div class="skill-category-card reveal-up" style="--delay: 0.4s">
+                        <div class="skill-category-header">
+                            <div class="category-icon glow-edu">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Academic Coursework</h3>
+                        </div>
+                        <ul class="coursework-list">
+                            <li><i class="fas fa-check-circle"></i> C & C++ Programming</li>
+                            <li><i class="fas fa-check-circle"></i> Data Analytics</li>
+                            <li><i class="fas fa-check-circle"></i> DBMS</li>
+                            <li><i class="fas fa-check-circle"></i> Data Structures & Algorithms</li>
+                            <li><i class="fas fa-check-circle"></i> OOPS</li>
+                            <li><i class="fas fa-check-circle"></i> Cloud Computing</li>
+                            <li><i class="fas fa-check-circle"></i> Data Cleaning & Preprocessing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">
+                    <span class="title-text">Featured Projects</span>
+                    <span class="title-line"></span>
+                </h2>
+            </div>
+            
+            <div class="project-filters reveal-up" style="--delay: 0.1s">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="supervised">Supervised ML</button>
+                <button class="filter-btn" data-filter="unsupervised">Unsupervised ML</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="deep-learning">Deep Learning</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+            </div>
+
+            <div class="project-search reveal-up" style="--delay: 0.2s; text-align: center; margin-bottom: 3rem; margin-top: 1.5rem;">
+                <div style="position: relative; max-width: 500px; margin: 0 auto;">
+                    <i class="fas fa-search" style="position: absolute; left: 1.2rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); pointer-events: none;"></i>
+                    <input type="text" id="project-search" placeholder="Search projects by name, or technology..." style="width: 100%; padding: 1rem 1rem 1rem 3rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; color: var(--text-light); font-size: 1rem; outline: none; transition: var(--transition-base); backdrop-filter: blur(10px);">
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.1s">
+                    <div class="project-image">
+                        <img src="images/network_security.png" alt="Network Security Phishing Predictor">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/NetworkSecurity" target="_blank"
+                                    class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">ML Project</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Network Security Phishing Predictor</h3>
+                        <p class="project-description">A machine learning solution to analyze network traffic and
+                            predict potential phishing attempts to enhance cybersecurity measures.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Cybersecurity</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/NetworkSecurity" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="deep-learning" class="project-card reveal-up" style="--delay: 0.2s">
+                    <div class="project-image">
+                        <img src="images/customer_churn.png" alt="Customer Churn Prediction Model">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/ANN-Customer-Churn-Prediction"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Deep Learning</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Customer Churn Prediction Model</h3>
+                        <p class="project-description">An Artificial Neural Network (ANN) model built to analyze
+                            customer data and predict potential churn to help businesses retain clients.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/ANN-Customer-Churn-Prediction" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="deep-learning" class="project-card reveal-up" style="--delay: 0.3s">
+                    <div class="project-image">
+                        <img src="images/Gemini_Generated_Image_goxptwgoxptwgoxp.png" alt="Australian Rain Prediction App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Australian-Rain-Prediction-App"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Deep Learning</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Australian Rain Prediction App</h3>
+                        <p class="project-description">A web application utilizing deep learning algorithms to
+                            accurately predict weather patterns and potential rainfall across Australia.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Preprocessing</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Australian-Rain-Prediction-App" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="deep-learning" class="project-card reveal-up" style="--delay: 0.35s">
+                    <div class="project-image">
+                        <img src="images/Gemini_Generated_Image_ouzqavouzqavouzq.png" alt="Statewise Flood Detection">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Statewise-Flood-Detection"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Deep Learning</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Statewise Flood Detection</h3>
+                        <p class="project-description">A deep learning approach to identifying and predicting flood-prone areas at the state level using predictive geospatial analysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Geospatial</span>
+                            <span class="tech-tag">Prediction</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Statewise-Flood-Detection" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="deep-learning" class="project-card reveal-up" style="--delay: 0.4s">
+                    <div class="project-image">
+                        <img src="images/salary_prediction.png" alt="ANN Salary Prediction Regression">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/ANN-Salary-Prediction-Regression"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Regression</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ANN Salary Prediction Regression</h3>
+                        <p class="project-description">A deep learning regression model using Artificial Neural Networks
+                            tailored to estimate software professional salaries based on key indicators.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">ANN</span>
+                            <span class="tech-tag">Regression</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/ANN-Salary-Prediction-Regression" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="nlp" class="project-card reveal-up" style="--delay: 0.5s">
+                    <div class="project-image">
+                        <img src="images/sentiment_analysis.png" alt="Kindle Review Sentiment Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Kindle-Review-Sentiment-Analyis"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">NLP Project</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Kindle Review Sentiment Analysis</h3>
+                        <p class="project-description">A Natural Language Processing (NLP) framework designed to analyze
+                            vast amounts of Kindle book reviews and accurately classify user sentiment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Text Processing</span>
+                            <span class="tech-tag">NLTK</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Kindle-Review-Sentiment-Analyis" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="data-analysis" class="project-card reveal-up" style="--delay: 0.6s">
+                    <div class="project-image">
+                        <img src="images/sustainable_energy.png" alt="Global Sustainable Energy Analytics">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Global-Sustainable-Energy-Analytics-A-Decadal-Study-2000-2020-"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Power BI</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Global Sustainable Energy Analytics</h3>
+                        <p class="project-description">An extensive decadal study (2000-2020) featuring comprehensive
+                            Power BI data visualization and analytics on global sustainable energy adoption trends.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Data Analytics</span>
+                            <span class="tech-tag">Dashboards</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Global-Sustainable-Energy-Analytics-A-Decadal-Study-2000-2020-"
+                            target="_blank" class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.7s">
+                    <div class="project-image">
+                        <img src="images/forest_fire.png" alt="Algerian Forest Fire Prediction">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Algerian-Forest-Fire-Prediction"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">ML Project</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Algerian Forest Fire Prediction</h3>
+                        <p class="project-description">Real-time Fire Weather Index (FWI) prediction web application.
+                            Predicts fire danger based on weather and fuel conditions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ridge Regression</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Algerian-Forest-Fire-Prediction" target="_blank"
+                            class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Supervised ML Projects (Appended) -->
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.1s">
+                    <div class="project-image">
+                        <img src="images/linear_regression.png" alt="Multiple Linear Regression">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/multiple%20linear%20regression%20prectical"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Regression</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Multiple Linear Regression</h3>
+                        <p class="project-description">A robust statistical baseline model predicting continuous
+                            outcomes using multiple linear regression algorithms.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Predictive Modeling</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/multiple%20linear%20regression%20prectical"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.2s">
+                    <div class="project-image">
+                        <img src="images/knn_classifier.png" alt="K-Nearest Neighbors">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/06-K%20Nearest%20Neighbour"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Clustering</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">K-Nearest Neighbors</h3>
+                        <p class="project-description">A robust distance-based learning classifier designed for robust
+                            multi-class entity grouping and prediction.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Distance-based</span>
+                            <span class="tech-tag">Classification</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/06-K%20Nearest%20Neighbour"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.3s">
+                    <div class="project-image">
+                        <img src="images/naive_bayes.png" alt="Naive Bayes Probabilistic Model">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/05-Naive%20Baye"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Probability</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Naive Bayes Classifier</h3>
+                        <p class="project-description">A probabilistic statistical classification model applying Bayes'
+                            theorem to solve complex text and categorical data.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Probability Theory</span>
+                            <span class="tech-tag">Classification</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/05-Naive%20Baye"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.4s">
+                    <div class="project-image">
+                        <img src="images/svm_model.png" alt="Support Vector Machines">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/04-Support%20Vector%20mechine"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Optimization</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Support Vector Machines</h3>
+                        <p class="project-description">An advanced hyperplane optimization model maximizing
+                            classification margins for highly distinct data clusters.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Hyperplane Opt.</span>
+                            <span class="tech-tag">Margin Max.</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/04-Support%20Vector%20mechine"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.5s">
+                    <div class="project-image">
+                        <img src="images/decision_tree.png" alt="Decision Tree Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/07-Decision%20Tree"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Tree Model</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Decision Tree Analysis</h3>
+                        <p class="project-description">A highly interpretable non-linear mapping system utilizing
+                            heuristic rule-based splitting structures.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Rule-based</span>
+                            <span class="tech-tag">Non-linear</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/07-Decision%20Tree"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.6s">
+                    <div class="project-image">
+                        <img src="images/random_forest.png" alt="Ensemble Technique">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/08-Ensemble%20Technique"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Ensemble</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ensemble Techniques</h3>
+                        <p class="project-description">A bagging-based ensemble approach achieving massive variance
+                            reduction through aggregated multi-tree analysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Bagging</span>
+                            <span class="tech-tag">Variance V.</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/08-Ensemble%20Technique"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.7s">
+                    <div class="project-image">
+                        <img src="images/gradient_boosting.png" alt="Logistic Regression">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/03-logistic%20regression"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Classification</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Logistic Regression</h3>
+                        <p class="project-description">A fundamental statistical model for computing probabilities and
+                            making robust binary classifications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Binary Output</span>
+                            <span class="tech-tag">Regression</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/03-logistic%20regression"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.8s">
+                    <div class="project-image">
+                        <img src="images/xgboost_model.png" alt="Ridge Lasso And Elasticnet">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/Ridge%20Lasso%20And%20Elasticnet/forestfire"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Regularization</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Ridge, Lasso & Elastic Net</h3>
+                        <p class="project-description">Advanced regularization techniques combating overfitting by
+                            penalizing complex model coefficients.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Regularization</span>
+                            <span class="tech-tag">Optimization</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/Ridge%20Lasso%20And%20Elasticnet/forestfire"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 0.9s">
+                    <div class="project-image">
+                        <img src="images/polynomial_regression.png" alt="Polynomial Linear Regression">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/polynimial%20lr%20prectical"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Regression</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Polynomial Linear Regression</h3>
+                        <p class="project-description">A powerful statistical approach to modeling non-linear
+                            relationships between continuous variables.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Non-linear</span>
+                            <span class="tech-tag">Optimization</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/polynimial%20lr%20prectical"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="supervised" class="project-card reveal-up" style="--delay: 1.0s">
+                    <div class="project-image">
+                        <img src="images/simple_linear_regression.png" alt="Simple Linear Regression">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/simple_linear_regression%20prectical"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Baseline</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Simple Linear Regression</h3>
+                        <p class="project-description">The foundational predictive modeling algorithm for tracking
+                            trends and mapping continuous variable dependencies.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Statistics</span>
+                            <span class="tech-tag">Predictive Base</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-/tree/main/simple_linear_regression%20prectical"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="unsupervised" class="project-card reveal-up" style="--delay: 1.1s">
+                    <div class="project-image">
+                        <img src="images/naive_bayes.png" alt="Principal Component Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/00-PCA"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Dimensionality</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Principal Component Analysis</h3>
+                        <p class="project-description">A powerful statistical technique used for unsupervised dimensionality reduction to emphasize variation and capture strong patterns.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dimensionality</span>
+                            <span class="tech-tag">Feature Ext.</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/00-PCA"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="unsupervised" class="project-card reveal-up" style="--delay: 1.2s">
+                    <div class="project-image">
+                        <img src="images/knn_classifier.png" alt="K-Means Clustering">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/01-%20K%20Means%20Clustering"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Clustering</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">K-Means Clustering</h3>
+                        <p class="project-description">A popular vector quantization algorithm mapping unstructured observations into distinct logical partitions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Partitioning</span>
+                            <span class="tech-tag">Distance Metric</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/01-%20K%20Means%20Clustering"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="unsupervised" class="project-card reveal-up" style="--delay: 1.3s">
+                    <div class="project-image">
+                        <img src="images/decision_tree.png" alt="Hierarchical Clustering">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/02-Hierarichal%20clustring"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Clustering</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Hierarchical Clustering</h3>
+                        <p class="project-description">An agglomerative connectivity-based approach capturing intrinsic grouping structures through dendrogram representations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Dendrograms</span>
+                            <span class="tech-tag">Agglomerative</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/02-Hierarichal%20clustring"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="unsupervised" class="project-card reveal-up" style="--delay: 1.4s">
+                    <div class="project-image">
+                        <img src="images/xgboost_model.png" alt="DBSCAN Clustering">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/03-DBSCAN%20Clustering"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Clustering</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">DBSCAN Clustering</h3>
+                        <p class="project-description">A density-based spatial clustering algorithm used to discover clusters of arbitrary shape within large databases containing noise.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Density-based</span>
+                            <span class="tech-tag">Spatial Analysis</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/03-DBSCAN%20Clustering"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div data-category="unsupervised" class="project-card reveal-up" style="--delay: 1.5s">
+                    <div class="project-image">
+                        <img src="images/svm_model.png" alt="Anomaly Detection">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/Anmolosly_detectio"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Detection</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Anomaly Detection</h3>
+                        <p class="project-description">An unguided process utilizing statistical deviations to identify rare items, events, or observations which raise deep suspicions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Outliers</span>
+                            <span class="tech-tag">Isolation</span>
+                        </div>
+                        <a href="https://github.com/HrideshMaithani14/unsupervised-ml/tree/main/02-Unsupervised%20machine%20learning/Anmolosly_detectio"
+                            target="_blank" class="project-btn">
+                            <span>View Code</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Full Repo Buttons -->
+            <div style="text-align: center; margin-top: 4rem;" class="reveal-up" style="--delay: 1.2s">
+                <a href="https://github.com/HrideshMaithani14" target="_blank" data-repo-category="all" class="btn btn-primary repo-btn" style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                    <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+                    View GitHub Profile
+                </a>
+                <a href="https://github.com/HrideshMaithani14/Supervised-ML-projects-" target="_blank" data-repo-category="supervised" class="btn btn-primary repo-btn" style="display: none; align-items: center; gap: 0.75rem;">
+                    <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+                    View Supervised ML Repo
+                </a>
+                <a href="https://github.com/HrideshMaithani14/unsupervised-ml" target="_blank" data-repo-category="unsupervised" class="btn btn-primary repo-btn" style="display: none; align-items: center; gap: 0.75rem;">
+                    <i class="fab fa-github" style="font-size: 1.2rem;"></i>
+                    View Unsupervised ML Repo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">
+                    <span class="title-text">Get In Touch</span>
+                    <span class="title-line"></span>
+                </h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info reveal-left">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        visions.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:maithanihridesh9012@gmail.com">maithanihridesh9012@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/HrideshMaithani14"
+                                    target="_blank">github.com/HrideshMaithani14</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form reveal-right" action="https://formspree.io/f/YOUR_FORM_ID"
+                    method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <!-- Formspree honeypot -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <!-- Redirect after submit -->
+                    <input type="hidden" name="_next" value="#contact">
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <p style="text-align: center; margin-top: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                    Or email directly: <a href="mailto:maithanihridesh9012@gmail.com"
+                        style="color: var(--primary-light);">maithanihridesh9012@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 <strong>Hridesh Maithani</strong>. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/HrideshMaithani14" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hridesh-maithani-00a059391/" target="_blank"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.coursera.org/user/bd911e4f6fcabc3cd9a36e4b1d34a915" target="_blank"
+                        aria-label="Coursera">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="https://x.com/HrideshMai66402" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hardy_0187/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
