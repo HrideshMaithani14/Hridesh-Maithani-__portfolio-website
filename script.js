@@ -141,6 +141,13 @@ class Navigation {
                 const href = link.getAttribute('href');
                 if (href.startsWith('#')) {
                     e.preventDefault();
+                    
+                    // Close mobile menu on nav link click
+                    if (this.mobileMenu.classList.contains('active')) {
+                        this.mobileMenu.classList.remove('active');
+                        if (this.navToggle) this.navToggle.classList.remove('active');
+                    }
+
                     const target = document.querySelector(href);
                     if (target) {
                         const offsetTop = target.offsetTop - 80;
@@ -157,6 +164,7 @@ class Navigation {
         if (this.navToggle) {
             this.navToggle.addEventListener('click', () => {
                 this.mobileMenu.classList.toggle('active');
+                this.navToggle.classList.toggle('active');
             });
         }
     }
