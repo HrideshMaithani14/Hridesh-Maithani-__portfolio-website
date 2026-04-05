@@ -1,0 +1,34 @@
+﻿diff --git a/styles.css b/styles.css
+index 62283bc..b97fa7b 100644
+--- a/styles.css
++++ b/styles.css
+@@ -356,11 +356,10 @@ body {
+ 
+ .title-line {
+     display: block;
+-    margin-bottom: 0.6rem;
++    margin-bottom: 0.2rem;
+     margin-top: 0;
+     padding: 0;
+-    line-height: 1.3;
+-    min-height: 1.4em;
++    line-height: normal;
+     height: auto;
+ }
+ 
+@@ -384,7 +383,6 @@ body {
+     background-clip: text;
+     position: relative;
+     display: inline-block;
+-    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
+     margin: 0;
+     padding: 0;
+ }
+@@ -396,7 +394,6 @@ body {
+     background-clip: text;
+     position: relative;
+     display: inline-block;
+-    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.5));
+     margin: 0;
+     padding: 0;
+ }
